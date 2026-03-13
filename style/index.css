@@ -1,0 +1,75 @@
+body {
+  background-image: url("../images/cover/cover1.JPG");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.accueil-introduction {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  align-items: flex-start;
+  margin: auto;
+  padding-top: 150px;
+}
+
+.contenu {
+  background-color: rgba(252, 227, 197, 0.5);
+  padding: 35px;
+  border-radius: 18px;
+  max-width: 650px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  padding-right: 100px;
+}
+
+.accueil-introduction h1 {
+  margin-bottom: 15px;
+  color: #403c33;
+}
+
+.accueil-introduction p {
+  margin-bottom: 30px;
+  color: #403c33;
+  font-weight: 450;
+}
+
+.accueil-introduction a {
+  color: white;
+}
+
+.cta {
+  display: inline-block;
+  background-color: #705d52;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 18px;
+  font-weight: 600;
+}
+
+.cta:hover {
+  background-color: #916340;
+}
+
+@media screen and (max-width: 900px) {
+  .accueil-introduction {
+    width: 80%;
+    padding-top: 100px;
+    padding-bottom: 80px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .accueil-introduction {
+    width: 90%;
+    padding-top: 60px;
+    padding-bottom: 50px;
+  }
+
+  .accueil-introduction h1 {
+    font-size: 2.2em;
+  }
+
+  .contenu {
+    padding: 20px;
+  }
+}

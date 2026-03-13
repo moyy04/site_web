@@ -1,0 +1,120 @@
+.section-photos {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: auto;
+}
+
+h1 {
+  margin-left: 35px;
+  margin-top: 30px;
+  color: #403c33;
+}
+
+.p1 {
+  margin: 30px 55px;
+  font-weight: 450;
+}
+
+.section-photos {
+  width: 95%;
+  margin: auto;
+}
+
+.sep-photo {
+  background-color: rgba(148, 140, 121, 0.5);
+  margin-bottom: 50px;
+  padding: 20px 30px;
+  border-radius: 18px;
+}
+
+.sep-photo h2 {
+  color: #403c33;
+  margin-bottom: 15px;
+}
+
+.grid-nice {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 300px;
+  gap: 15px;
+}
+
+.grid-bul {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: 300px;
+  gap: 15px;
+}
+
+.grid-vn {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: 300px;
+  gap: 15px;
+}
+
+.grid-bul img,
+.grid-nice img,
+.grid-vn img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.conteneur-photos {
+  position: relative;
+}
+
+.photo-hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1em;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: none;
+}
+
+.conteneur-photos:hover .photo-hover {
+    display: flex;
+}
+
+@media screen and (max-width: 900px) {
+  .grid-nice {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .section-photos {
+    padding: 15px;
+  }
+
+  .grid-nice,
+  .grid-bul,
+  .grid-vn {
+    grid-template-columns: 1fr;
+    grid-auto-rows: 220px;
+    gap: 10px;
+  }
+
+  h1 {
+    margin-left: 15px;
+    margin-top: 20px;
+  }
+
+  .section-photos h2 {
+    margin-top: 20px;
+    margin-bottom: 15px;
+  }
+
+  .sep-photo {
+    margin-bottom: 35px;
+  }
+}
